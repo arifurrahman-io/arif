@@ -38,7 +38,7 @@
 
 <body>
 
-    <nav class="w-full lg:px-40 sm:px-10 py-5 bg-tColor">
+    <nav class="w-full px-10 lg:px-40 py-5 bg-tColor">
         <div class="flex justify-between items-center">
             <div>
                 <a href="">
@@ -46,18 +46,19 @@
                 </a>
             </div>
 
-            <div class="sm:invisible md:visible">
+            <div class="invisible md:visible">
                 <ul class="flex justify-center items-center">
-                    <li><a href="" class="mx-3 text-white text-lg">Home</a></li>
-                    <li><a href="" class="mx-3 text-white text-lg">Services</a></li>
-                    <li><a href="" class="mx-3 text-white text-lg">Skills</a></li>
+                    <li><a href="#home" class="mx-3 text-white text-lg">Home</a></li>
+                    <li><a href="#services" class="mx-3 text-white text-lg">Services</a></li>
+                    <li><a href="#skills" class="mx-3 text-white text-lg">Skills</a></li>
+                    <li><a href="#contact" class="mx-3 text-white text-lg">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="grid md:grid-cols-2 sm:grid-cols-1 gap-4 sm:px-5 lg:px-40 sm:py-10 lg:py-20 bg-gray-50">
+        <section class="grid grid-cols-1 px-10 py-10 md:grid-cols-2 gap-4 lg:px-40 lg:py-20 bg-gray-50" id="home">
             <div class="flex flex-col justify-center gap-4 px-5">
                 <h4 class="font-oswald text-xl text-tColor font-bold">Hello! I'm</h4>
                 <h1 class="text-5xl font-fira font-bold">Md. Arifur Rahman</h1>
@@ -80,17 +81,17 @@
             </div>
 
             <div class="flex justify-end items-center px-5">
-                <img class="sm:w-full md:w-3/5" src="images/developer.png" alt="">
+                <img class="w-full md:w-3/5" src="images/developer.png" alt="">
             </div>
         </section>
 
-        <section class="lg:px-40 sm:px-10 lg:py-20 sm:py-10">
+        <section class="px-10 py-10 lg:px-40  lg:py-20" id="services">
             <div class="my-16">
                 <h1 class="flex justify-center text-5xl font-fira font-bold">What I do?</h1>
                 <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, inventore?
                 </p>
             </div>
-            <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="flex flex-col text-justify items-center p-5 ">
                     <img src="./images/website-dev.png" class="w-52" alt="">
                     <h1 class="text-2xl font-oswald mb-3">Web Development</h1>
@@ -115,11 +116,93 @@
             </div>
         </section>
 
-        <section>
+        <section class="px-10 py-10 lg:px-40 lg:py-20" id="skills">
+            <div class="pb-20">
+                <h1 class="text-5xl font-bold text-center">My Skills</h1>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo!
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
+                <div class="grid grid-cols-3">
+                    <img class="w-24 p-5" src="./images/html.png" alt="">
+                    <img class="w-24 p-5" src="./images/css.png" alt="">
+                    <img class="w-24 p-5" src="./images/bootstrap.png" alt="">
+                    <img class="w-24 p-5" src="./images/js.png" alt="">
+                    <img class="w-24 p-5" src="./images/react.png" alt="">
+                    <img class="w-24 p-5" src="./images/next.js.png" alt="">
+                    <img class="w-24 p-5" src="./images/python.png" alt="">
+                    <img class="w-24 p-5" src="./images/java.jpg" alt="">
+                </div>
+                <div>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-1 leading-none rounded-full my-3"
+                            style="width: 85%">HTML - 85%</div>
+                    </div>
 
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-1 leading-none rounded-full my-3"
+                            style="width: 80%">CSS - 80%</div>
+                    </div>
+
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-1 leading-none rounded-full my-3"
+                            style="width: 85%">Javascript - 85%</div>
+                    </div>
+
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-1 leading-none rounded-full my-3"
+                            style="width: 75%">Python - 75%</div>
+                    </div>
+
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-1 leading-none rounded-full my-3"
+                            style="width: 90%">Java - 90%</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="px-10 py-10 lg:px-40 lg:py-20" id="contact">
+            <div class="flex flex-col justify-center items-center my-10">
+                <h1 class="text-5xl font-bold">Contact Me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, quo?</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div>
+                    <img src="./images/contact-us.png" class="w-100" alt="">
+                </div>
+                <div>
+                    <input type="text" placeholder="Your Name"
+                        class="rounded text-black-500 border-2 w-full my-3 p-3" />
+                    <input type="text" placeholder="Your Email"
+                        class="rounded text-black-500 border-2 w-full my-3 p-3" />
+                    <input type="text" placeholder="Your Phone"
+                        class="rounded text-black-500 border-2 w-full my-3 p-3" />
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"
+                        class="rounded text-black-500 border-2 w-full my-3 p-3"></textarea>
+                    <a href="" class="px-5 py-3 my-3 bg-tColor text-white font-bold">Send</a>
+                </div>
+            </div>
         </section>
 
     </main>
+
+    <footer class="px-10 pt-10 pb-5 md:px-40 md:pt-20 md:pb-10 flex flex-col justify-center items-center">
+        <hr class="w-5/6 h-0.5 bg-black ">
+        <div>
+            <div>
+                <h1 class="text-2xl font-semibold">Full Stake Website Developer</h1>
+            </div>
+            <div class="flex justify-center items-center">
+                <a href=""><i class="fa-brands fa-facebook-f mx-2 text-lg"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in mx-2 text-lg"></i></a>
+                <a href=""><i class="fa-brands fa-github mx-2 text-lg"></i></a>
+                <a href=""><i class="fa-brands fa-twitter mx-2 text-lg"></i></a>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 
