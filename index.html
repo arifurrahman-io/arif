@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arifur Rahman</title>
+    <link rel="shortcut icon" href="./images/my-bg2.jpg" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,8 @@
     <script src="https://kit.fontawesome.com/f91b28321f.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -38,84 +41,113 @@
 
 <body>
 
-    <nav class="w-full px-5 lg:px-40 py-5 bg-tColor">
-        <div class="flex justify-between items-center">
-            <div>
-                <a href="">
-                    <h1 class="text-white text-xl md:text-2xl font-bold">Arifur Rahman</h1>
-                </a>
+    <header class="sticky top-0 z-50">
+        <nav class="p-2 bg-white shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+                <span class="text-2xl font-[Poppins] cursor-pointer">
+                    <img class="h-10 inline" src="./images/my-bg2.jpg">
+
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
             </div>
 
-            <div class="invisible md:visible">
-                <ul class="flex justify-center items-center">
-                    <li><a href="#home" class="mx-3 text-white text-lg">Home</a></li>
-                    <li><a href="#services" class="mx-3 text-white text-lg">Services</a></li>
-                    <li><a href="#skills" class="mx-3 text-white text-lg">Skills</a></li>
-                    <li><a href="#contact" class="mx-3 text-white text-lg">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+            <ul
+                class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#home" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#services" class="text-xl hover:text-cyan-500 duration-500">SERVICES</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#skills" class="text-xl hover:text-cyan-500 duration-500">SKILLS</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#contact" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+                </li>
 
-    <main>
+                <button
+                    class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+                    Hire Me
+                </button>
+                <h2 class=""></h2>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="relative">
         <section class="grid grid-cols-1 px-5 py-10 md:grid-cols-2 gap-4 lg:px-40 lg:py-20 bg-gray-50" id="home">
             <div class="flex flex-col justify-center gap-4">
                 <h4 class="font-oswald text-xl text-tColor font-bold">Hello! I'm</h4>
-                <h1 class="text-2xl md:text-5xl font-fira font-bold">Md. Arifur Rahman</h1>
-                <h3 class="text-xl md:text-2xl font-oswald font-semibold">A <span class="text-teal-600">Full Stake Web
+                <h1 class="text-3xl md:text-5xl font-fira font-bold">Md. Arifur Rahman</h1>
+                <h3 class="text-xl md:text-2xl font-oswald font-semibold">A <span class="text-indigo-500">Full Stake Web
                         Developer</span> from
                     <span class="text-pink-500">Bangladesh</span>
                 </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis veniam vero culpa, sequi minus
-                    veritatis autem nihil, cupiditate unde assumenda tempore quas itaque expedita. Nostrum animi dolorum
-                    ea nobis inventore.</p>
+                <p class="text-justify">I have been involved in website development and android application development
+                    since 2015. In
+                    between I have developed websites and Android applications for many companies. Apart from this, I am
+                    constantly doing development work according to the needs of clients from different countries. My
+                    clients are satisfied with my work and because of this I have received many positive reviews.</p>
 
                 <div class="my-5 flex">
                     <div>
-                        <a class="bg-tColor px-5 py-3 w-36 text-white font-bold hover:bg-teal-500 mr-8" href="">Download
+                        <a class="bg-tColor px-5 py-3 w-36 text-white font-bold hover:bg-teal-500 mr-8 rounded"
+                            href="">Download
                             CV</a>
                     </div>
                     <div>
-                        <a href=""><i class="fa-brands fa-facebook-f px-1 text-lg"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin-in px-1 text-lg"></i></a>
-                        <a href=""><i class="fa-brands fa-github px-1 text-lg"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter px-1 text-lg"></i></a>
+                        <a href="https://www.facebook.com/arifurrahman.top/" target="_blank"><i
+                                class="fa-brands fa-facebook-f px-1 text-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/arifurrahman-bd/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in px-1 text-xl"></i></a>
+                        <a href="https://github.com/arifurrahman01" target="_blank"><i
+                                class="fa-brands fa-github px-1 text-xl"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter px-1 text-xl"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="flex justify-end items-center">
-                <img class="w-full md:w-3/5" src="images/developer.png" alt="">
+                <img class="w-full lg:w-4/6 p-5" src="images/developer.png" alt="">
             </div>
         </section>
 
         <section class="px-5 py-10 lg:px-40  lg:py-20" id="services">
             <div class="my-16">
                 <h1 class="flex justify-center text-5xl font-fira font-bold">What I do?</h1>
-                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, inventore?
+                <p class="text-center">I am dedicated to serve my clients and try my best to keep it up.
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="flex flex-col text-justify items-center">
+                <div
+                    class="flex flex-col text-justify items-center p-5 bg-rose-50 border rounded-lg hover:bg-indigo-50 hover:border hover:rounded-lg">
                     <img src="./images/website-dev.png" class="w-52" alt="">
                     <h1 class="text-2xl font-oswald mb-3">Web Development</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit earum alias ratione
-                        quasi, quod voluptas ullam id architecto optio! Harum, qui. Minima alias ratione nam est sint
-                        rerum odit officiis.</p>
+                    <p>A well-designed website is essential for reaching a larger audience and generating more leads or
+                        customers. Using a website, you can collect and read testimonials about your products and
+                        services much more quickly and easily. Web development and design help to promote a company's
+                        brand name.</p>
                 </div>
-                <div class="flex flex-col text-justify items-center">
+                <div
+                    class="flex flex-col text-justify items-center p-5 hover:bg-indigo-50 hover:border hover:rounded-lg">
                     <img src="./images/android.png" class="w-52" alt="">
                     <h1 class="text-2xl font-oswald mb-3">Android App Development</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit earum alias ratione
-                        quasi, quod voluptas ullam id architecto optio! Harum, qui. Minima alias ratione nam est sint
-                        rerum odit officiis.</p>
+                    <p>Android app development can assist a business in reaching out to more customers, improve its
+                        sales, improve its brand image and create a loyal customer base. It can lay the base for the
+                        success of any business.</p>
                 </div>
-                <div class="flex flex-col text-justify items-center">
+                <div
+                    class="flex flex-col text-justify items-center p-5 hover:bg-indigo-50 hover:border hover:rounded-lg">
                     <img src="./images/graphics.png" class="w-48" alt="">
                     <h1 class="text-2xl font-oswald mb-3">Graphics Design</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit earum alias ratione
-                        quasi, quod voluptas ullam id architecto optio! Harum, qui. Minima alias ratione nam est sint
-                        rerum odit officiis.</p>
+                    <p>Good graphic design will help a business to gain high visibility which in turn can lead to
+                        increased sales. Attractive visuals, effective communication of ideas, higher visibility and
+                        enhanced credibility push traffic to your brand. Increased traffic leads to more opportunity.
+                    </p>
                 </div>
             </div>
         </section>
@@ -123,7 +155,7 @@
         <section class="px-5 py-10 lg:px-40 lg:py-20" id="skills">
             <div class="pb:10 md:pb-20">
                 <h1 class="text-5xl font-bold text-center">My Skills</h1>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo!
+                <p class="text-center py-3">Always I try to learn and improve my skills.
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
@@ -172,20 +204,25 @@
                 <h1 class="text-5xl font-bold">Contact Me</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, quo?</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div>
-                    <img src="./images/contact-us.png" class="w-100" alt="">
+                    <img src="./images/contact-us.png" class="w-3/4" alt="">
                 </div>
                 <div class="w-full">
-                    <input type="text" placeholder="Your Name"
-                        class="rounded text-black-500 border-2 w-full my-3 p-3" />
-                    <input type="text" placeholder="Your Email"
-                        class="rounded text-black-500 border-2 w-full my-3 p-3" />
-                    <input type="text" placeholder="Your Phone"
-                        class="rounded text-black-500 border-2 w-full my-3 p-3" />
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"
-                        class="rounded text-black-500 border-2 w-full my-3 p-3"></textarea>
-                    <a href="" class="px-5 py-3 my-3 bg-tColor text-white font-bold">Send</a>
+                    <div class="flex items-center text-lg md:text-3xl py-3">
+                        <i class="fa-solid fa-phone-volume text-blue-500 mr-5"></i>
+                        <h1>+8801684516151</h1>
+                    </div>
+
+                    <div class="flex items-center text-lg md:text-3xl py-3">
+                        <i class="fa-solid fa-envelope-circle-check text-blue-500 mr-5"></i>
+                        <h1>arifurrahman.now@gmail.com</h1>
+                    </div>
+
+                    <div class="flex items-center text-lg md:text-3xl py-3">
+                        <i class="fa-solid fa-map-location-dot text-blue-500 mr-5"></i>
+                        <h1>Dhaka, Bangladesh</h1>
+                    </div>
                 </div>
             </div>
         </section>
@@ -199,14 +236,24 @@
                 <h1 class="text-lg md:text-2xl font-semibold">Full Stake Website Developer</h1>
             </div>
             <div class="flex justify-center items-center">
-                <a href=""><i class="fa-brands fa-facebook-f mx-2 text-lg"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in mx-2 text-lg"></i></a>
-                <a href=""><i class="fa-brands fa-github mx-2 text-lg"></i></a>
+                <a href="https://www.facebook.com/arifurrahman.top/" target="_blank"><i
+                        class="fa-brands fa-facebook-f mx-2 text-lg"></i></a>
+                <a href="https://www.linkedin.com/in/arifurrahman-bd/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in mx-2 text-lg"></i></a>
+                <a href="https://github.com/arifurrahman01" target="_blank"><i
+                        class="fa-brands fa-github mx-2 text-lg"></i></a>
                 <a href=""><i class="fa-brands fa-twitter mx-2 text-lg"></i></a>
             </div>
         </div>
 
     </footer>
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[50px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[50px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
 
 </body>
 
