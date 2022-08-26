@@ -254,23 +254,41 @@
                 <div class="flex justify-center items-center">
                     <img src="./images/contact-us.png" class="w-4/5" alt="">
                 </div>
-                <div class="w-full">
-                    <div class="flex items-center text-lg lg:text-3xl py-3">
-                        <i
-                            class="fa-solid fa-phone-volume text-blue-500 mr-5 border rounded-full bg-blue-200 p-4 lg:p-8 animate-pulse"></i>
-                        <h1>+8801684516151</h1>
-                    </div>
 
-                    <div class="flex items-center text-lg lg:text-3xl py-3">
-                        <i
-                            class="fa-solid fa-paper-plane text-purple-500 mr-5 border rounded-full bg-purple-200 p-4 lg:p-8 animate-pulse"></i>
-                        <h1>arifurrahman.now@gmail.com</h1>
-                    </div>
-                    <div class="flex items-center text-lg lg:text-3xl py-3">
-                        <i
-                            class="fa-solid fa-map-location-dot text-pink-500 mr-5 border rounded-full bg-pink-200 p-4 lg:p-8 animate-pulse"></i>
-                        <h1>Dhaka, Bangladesh</h1>
-                    </div>
+                <div>
+                    <form onsubmit="sendEmail(); reset(); return false;" class="flex gap-2 flex-col">
+
+                        <input type="text" placeholder="Name" id="name" class="border p-2">
+                        <input type="email" placeholder="Email" id="email" class="border p-2">
+                        <input type="text" placeholder="Phone" id="phone" class="border p-2">
+                        <input type="text" placeholder="Subject" id="subject" class="border p-2">
+                        <textarea name="" id="message" class="border h-60 p-3"
+                            placeholder="How can I help you?"></textarea>
+                        <button type="submit" id="submit" class="bg-orange-400 px-5 py-3">Submit</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="px-5 lg:px-40">
+            <div class="grid gap-2 grid-cols-1 lg:grid-cols-3">
+                <div class="flex items-center text-lg lg:text-xl py-3">
+                    <i
+                        class="fa-solid fa-phone-volume text-blue-500 mr-5 border rounded-full bg-blue-200 p-5  animate-pulse"></i>
+                    <h1>+8801684516151</h1>
+                </div>
+
+                <div class="flex items-center text-lg lg:text-xl py-3">
+                    <i
+                        class="fa-solid fa-paper-plane text-purple-500 mr-5 border rounded-full bg-purple-200 p-5  animate-pulse"></i>
+                    <h1>arifurrahman.now@gmail.com</h1>
+                </div>
+                <div class="flex items-center text-lg lg:text-xl py-3">
+                    <i
+                        class="fa-solid fa-map-location-dot text-pink-500 mr-5 border rounded-full bg-pink-200 p-5  animate-pulse"></i>
+                    <h1>Dhaka, Bangladesh</h1>
                 </div>
             </div>
         </section>
@@ -362,6 +380,32 @@
             e.name === 'menu' ? (e.name = "close", list.classList.add('top-[50px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[50px]'), list.classList.remove('opacity-100'))
         }
     </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "arifurrahman.now@gmail.com",
+                Password: "080F2E1A6DF57213437668111214775E0CB5",
+                To: "arifurrahman.now@gmail.com",
+                From: document.getElementById('email').value,
+                Phone: document.getElementById('phone').value,
+                Subject: document.getElementById('subject').value,
+                Body: "Name: " + document.getElementById('name').value +
+                    "<br> Email: " + document.getElementById('email').value +
+                    "<br> Phone: " + document.getElementById('phone').value +
+                    "<br> Subject: " + document.getElementById('subject').value +
+                    "<br> Message: " + document.getElementById('message').value
+
+            }).then(
+                message => alert("Message sent successfully!")
+            );
+        }
+    </script>
+
+
 
 </body>
 
